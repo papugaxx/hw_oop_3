@@ -8,7 +8,7 @@ void droby::setValues(int num, int denom) {
 }
 
 void droby::print() {
-    std::cout << numerator << "/" << denominator;
+    cout << numerator << "/" << denominator;
 }
 
 droby droby::add(droby other) {
