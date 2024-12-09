@@ -1,15 +1,15 @@
 #pragma once
-class droby {
+class Fractions {
 private:
-    int numerator;
-    int denominator; 
+    int numerator;   
+    int denominator; // Знаменатель
 
 public:
-    void setValues(int num, int denom); 
-    void print();
+    void setValues(int num, int denom);
+    void print();   
 
-    droby add(droby other);      
-    droby subtract(droby other); 
-    droby multiply(droby other); 
-    droby divide(droby other); 
+    Fractions operator+(const Fractions& other);
+    Fractions operator-(const Fractions& other);
+    Fractions operator*(const Fractions& other);
+    Fractions operator/(const Fractions& other);
 };
