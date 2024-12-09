@@ -1,38 +1,38 @@
-#include "droby.h"
+#include "Fractions.h"
 #include <iostream>
 using namespace std;
 
 int main() {
-    droby d1, d2, result;
+    Fractions f1, f2, result;
     int num1, denom1, num2, denom2;
 
-    cout << "num and denom for d1";
+    cout << "Enter num and denom for f1: ";
     cin >> num1 >> denom1;
-    d1.setValues(num1, denom1);
+    f1.setValues(num1, denom1);
 
-    cout << "num and denom for d2";
+    cout << "Enter num and denom for f2: ";
     cin >> num2 >> denom2;
-    d2.setValues(num2, denom2);
+    f2.setValues(num2, denom2);
 
-    cout << "d1 ";
-    d1.print();
-    cout << "\nd2 ";
-    d2.print();
+    cout << "f1: ";
+    f1.print();
+    cout << "\nf2: ";
+    f2.print();
 
-    result = d1.add(d2);
-    cout << "\nsum ";
+    result = f1 + f2;
+    cout << "\nSum: ";
     result.print();
 
-    result = d1.subtract(d2);
-    cout << "\ndifference ";
+    result = f1 - f2;
+    cout << "\nDifference: ";
     result.print();
 
-    result = d1.multiply(d2);
-    cout << "\nproduct ";
+    result = f1 * f2;
+    cout << "\nProduct: ";
     result.print();
 
-    result = d1.divide(d2);
-    cout << "\nfraction ";
+    result = f1 / f2;
+    cout << "\nQuotient: ";
     result.print();
 
     return 0;
